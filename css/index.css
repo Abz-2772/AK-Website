@@ -527,16 +527,6 @@ footer #email {
     footer {
         font-size: 50%;
     }
-    
-    footer #Tel {
-    float: right;
-    width: 15%;
-    }
-
-    footer #email {
-      float: left;
-      width: 28%;
-    }
 
 }
 
