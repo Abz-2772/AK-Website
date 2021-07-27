@@ -1,0 +1,532 @@
+header, body, section, footer{
+    display: block;
+}
+
+body{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'roboto';
+    font-size: 100%;
+    font-weight: 300;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#logo{
+    width: 8%;
+    height: 100px;
+    margin: 0%;
+    padding: 0%;
+}
+
+#leftNav {
+    float: left;
+    text-align: right;
+    padding-right: 2px;
+    width: 44%;
+}
+
+#rightNav {
+    float: right;
+    text-align: left;
+    padding: 0;
+    margin: 0%;
+    width: 47%;
+}
+
+#leftNav nav{
+    margin: 0%;
+    padding: 0%;
+}
+
+#leftNav nav ul{
+    padding-right: 0%;
+    padding-top: 25px;
+}
+
+#leftNav nav li{
+    display: inline;
+    margin-right: 20px;
+}
+
+#leftNav nav a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 8px;
+}
+
+#rightNav nav{
+    margin: 0%;
+    padding: 0%;
+}
+
+#rightNav nav ul{
+    padding-left: 0%;
+    padding-top: 25px;
+}
+
+#rightNav nav li{
+    display: inline;
+    margin-left: 20px;
+}
+
+#rightNav nav a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 8px;
+}
+
+#wrap {
+    clear: both;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.Background {
+    background-image: url(../images/b10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    float: left;
+    z-index: 2;
+    position: absolute;
+}
+
+.column1 {
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 20%;
+    height: 80%;
+    float: left;
+    position: relative;
+    z-index: 5;
+}
+
+.column2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60%;
+    height: 80%;
+    float: left;
+    position: relative;
+    display: inline;
+    z-index: 5;
+    background-color:black;
+    opacity: 0.8;
+}
+
+.column2 p{
+    font-weight: bold;
+    color: white;
+}
+
+
+.column2 section {
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+
+}
+
+section h1 {
+    color: white;
+    text-align: left;
+    padding-bottom: 5px;
+    font-size: 185%;
+    font-weight: 800;
+    border-bottom: thick double white;
+}
+
+h2 {
+    color: white;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.column2 section p {
+    font-size: 110%;
+}
+
+a {
+    color: #666;
+}
+
+/* SubId's in index.html */
+#photo {
+    text-align: center;
+    background-color: white;
+    padding: 2%;
+    float: right;
+    width: 30%;
+    margin-left: 15px;
+}
+
+#photo h3 {
+    text-align: right;
+}
+
+#photo p {
+    text-align: left;
+    color: black;
+}
+
+#photo img {
+    width: 100%;
+}
+
+#para {
+    text-align: center;
+}
+
+#para h2 {
+    text-align: left;
+}
+
+#para p {
+    text-align: left;
+    font-size: 125%;
+}
+
+button {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 100px;
+    border:none;
+}
+
+button a {
+    color: black;
+    font-size: 110%;
+    text-decoration: none;
+}
+
+/* SubId in about.html */
+#photos {
+    float: right;
+    display: inline;
+    position: relative;
+    padding-top: 5%;
+    padding-right: 2%;
+    width: 30%;
+    text-align: center;
+}
+
+#photos img {
+    width: 80%;
+}
+
+
+/* SubId in resume.html */
+#EduImg{
+    text-align: center;
+    padding-top: 5px;
+}
+
+#EduImg img{
+    height: 120px;
+    padding-right: 5%;
+}
+
+/* SubId in Contact.html*/
+#socials{
+    text-align: center;
+    padding-left: 4%;
+}
+
+#socials img{
+    height: 150px;
+    padding-right: 5%;
+}
+
+
+.column3 {
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 20%;
+    height: 80%;
+    float: left;
+    position: relative;
+    z-index: 5;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    clear: both;
+    z-index: 5;
+    background-color: #FFFFFF;
+    font-size: 125%;
+    font-weight: 300;
+    padding-top: 50px;
+    border-top: 1px solid black;
+}
+
+footer #Tel {
+    float: right;
+    width: 13%;
+}
+
+footer #email {
+    float: left;
+    width: 28%;
+}
+
+/* media query for medium screen/tablet */
+@media only screen and (max-width: 885px) {
+
+    header{
+        height: initial;
+    }
+    
+    #logo{
+        width: 15%;
+    }
+    
+    #leftNav {
+        width: 40%;
+    }
+    
+    #rightNav {
+        width: 40%;
+    }
+    
+    .column1 {
+        width: 7.5%;
+    }
+    
+    .column2 {
+        width: 85%;
+    }
+       
+    section h1 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 175%;
+    }
+    
+    /* SubId's in index.html */    
+    #photo p {
+        font-size: 100%;
+    }
+    
+    button a {
+        font-size: 120%;
+    }
+    
+    /* SubId in about.html */
+    #photos {
+        padding-top: 10%;
+    }
+    
+    #photos img {
+        width: 90%;
+    }
+    
+    /* SubId in resume.html */
+    #EduImg img{
+        height: 80px;
+    }
+    
+    /* SubId in Contact.html*/
+    #socials img{
+        height: 100px;
+    }
+    
+    .column3 {
+        width: 7.5%;
+    }
+    
+    footer {
+        font-size: 80%;
+    }
+
+    footer #Tel {
+        width: 12%;
+    }
+
+    footer #email {
+        width: 30%;
+    }
+
+}
+
+/* media query for small screen/phones */
+@media only screen and (max-width: 480px) {
+
+    header{
+        height: initial;
+    }
+    
+    #logo{
+        width: initial
+    }
+    
+    #leftNav {
+        float: none;
+        width: 100%;
+    }
+    
+    #rightNav {
+        float: none;
+        width: 100%;
+    }
+    
+    #leftNav nav{
+        text-align: center;
+    }
+    
+    #leftNav nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #leftNav nav li{
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #666;
+    }
+    
+    #leftNav nav a{
+        border: none;
+    }
+    
+    #rightNav nav{
+        text-align: center;
+    }
+    
+    #rightNav nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #rightNav nav li{
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #666;
+    }
+    
+    #rightNav nav a{
+        border: none;
+    }
+    
+    .column1 {
+        width: 0%;
+    }
+    
+    .column2 {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        width: 100%;
+    }
+    
+    .column2 section {
+        width: 90%;
+        float: left;
+        margin-left: 5%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    
+    }
+    
+    section h1 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 140%;
+        border-bottom: thick double white;
+    }
+    
+    h2 {
+        font-size: 100%;
+    }
+    
+    .column2 section p {
+        font-size: 70%;
+    }
+    
+    
+    /* SubId's in index.html */
+    #photo {
+        text-align: left;
+        float: none;
+        width: 100%;
+        margin-left: -7px;
+    }
+    
+    #photo h3 {
+        font-size: 100%;
+    }
+    
+    #photo p {
+        font-size: 85%;
+    }
+    
+    #photo img {
+        margin-right: 10px;
+        float: left;
+        width: 30%;
+    }
+    
+    #para p {
+        font-size: 85%;
+    }
+    
+    button a {
+        font-size: 100%;
+    }
+    
+    /* SubId in about.html */
+    #photos {
+        display: none;
+    }
+    
+    
+    /* SubId in resume.html */
+    #EduImg{
+        display: none;
+    }
+    
+    /* SubId in Contact.html*/
+    #socials img{
+        height: 75px;
+    }
+    
+    
+    .column3 {
+        width: 0%;
+    }
+    
+    footer {
+        font-size: 55%;
+    }
+
+}
+
